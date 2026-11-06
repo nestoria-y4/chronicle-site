@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>처음 10분 · 크로니클 온라인</title><meta name="description" content="처음 10분"><link rel="stylesheet" href="../../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>크로니클 온라인 · 공식 정보</small></span></a>
+<div class="lang"><a href="../../ko/guide/first10.html" class="on">KO</a><a href="../../en/guide/first10.html" class="">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="../index.html" class="">홈</a><a href="../news.html" class="">새 소식</a><a href="../guide/index.html" class="on">게임 가이드</a><a href="../ui.html" class="">인터페이스</a><a href="../db/index.html" class="">데이터베이스</a><a href="../systems.html" class="">고유 시스템</a><a href="../community.html" class="">커뮤니티</a></div></nav></header>
+<main><div class="sheet"><h1>처음 10분</h1>
+<p>게임에 들어오면 캐릭터 선택 화면이 먼저 나옵니다. 처음이면 [새 캐릭터]로 종족과 계열을 고르세요.</p>
+<figure style="margin:10px 0"><img class="shot" src="../../img/charselect_marked.jpg" alt="캐릭터 선택 화면" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">캐릭터 선택 화면</figcaption></figure>
+<ol class="steps">
+<li><b>종족·계열 고르기</b> — 휴먼·엘프·다크엘프·오크·드워프 × 전사/마법 계열 × 남/여. 종족마다 시작 마을이 다릅니다.</li>
+<li><b>안내인과 대화</b> — 마을 광장의 안내인(머리 위 ! 표시)을 누르면 메인 퀘스트가 시작됩니다. 퀘스트 알림 판의 [이동]을 누르면 알아서 걸어갑니다.</li>
+<li><b>첫 사냥</b> — 몬스터를 한 번 누르면 타겟, [공격]을 누르면 싸웁니다. 오른쪽 아래 자동 줄의 [필드]를 켜면 다음 몬스터를 알아서 찾아 잡습니다.</li>
+<li><b>물약과 귀환</b> — 아이템 칸 2개(HP 회복약·귀환 주문서)는 공격 버튼 왼쪽. 자동 줄의 [HP]를 켜면 HP가 낮을 때 알아서 마십니다.</li>
+<li><b>Lv 15 → 중앙 마을</b> — 종족 지역을 마치면 모든 종족이 모이는 밝은돌 성 마을로 갑니다. 거기서부터 공용 사냥터·파티·노점이 열립니다.</li>
+<li><b>Lv 18 1차 전직</b> — Lv 18부터 전직 퀘스트, Lv 20에 1차 직업. 2차 전직은 Lv 40.</li>
+</ol>
+<div class="note">💡 쿠폰: ⚙ 설정 › 쿠폰 칸에 아래 코드를 넣으면 선물을 받습니다. <span class="coupon">CHRONICLE</span> <span class="coupon">WELCOME</span></div>
+<figure style="margin:10px 0"><img class="shot" src="../../img/hud_marked.jpg" alt="마을 화면 (번호 설명은 인터페이스 페이지)" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">마을 화면 (번호 설명은 인터페이스 페이지)</figcaption></figure></div></main>
+<footer>크로니클 온라인 공식 정보 사이트 · 게임 데이터에서 자동 생성 · 모든 그림은 게임 화면 캡처 · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Controls · Chronicle Online</title><meta name="description" content="Controls"><link rel="stylesheet" href="../../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>OFFICIAL INFO SITE</small></span></a>
+<div class="lang"><a href="../../ko/guide/controls.html" class="">KO</a><a href="../../en/guide/controls.html" class="on">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="../index.html" class="">Home</a><a href="../news.html" class="">News</a><a href="../guide/index.html" class="on">Guides</a><a href="../ui.html" class="">Interface</a><a href="../db/index.html" class="">Database</a><a href="../systems.html" class="">Systems</a><a href="../community.html" class="">Community</a></div></nav></header>
+<main><div class="sheet"><h1>Controls</h1>
+<h2>Phone (landscape)</h2>
+<ul><li>Left thumb = move joystick (anywhere bottom-left), right thumb = [Attack], 6 skill slots and the auto row.</li>
+<li>Tap a monster/NPC to target/talk. Drag to rotate camera, pinch to zoom.</li>
+<li>Long-press (0.6s) a skill slot to remove it. Long-press [Field] in the auto row for auto-hunt settings.</li>
+<li>No jump (like the classics). Hills are climbed via paths.</li></ul>
+<h2>PC</h2>
+<ul><li>W A S D move · F attack · Tab next target · 1~0 - = skill hotbar (hunting) · Shift+1~= bottom toggle bar</li>
+<li>Right-drag = camera, wheel = zoom.</li></ul>
+<h2>Menu icons (top right 3×2)</h2>
+<ul><li>Map — continent → territory → town. Tap a zone and [Go] to path-find</li><li>Character — stats & gear</li><li>Bag — items, put in slot, drop</li>
+<li>Skills — learn (skill points), put in slot</li><li>Quests — main & side progress, [Go]</li><li>Healer — call & set mercenary pet</li></ul></div></main>
+<footer>Chronicle Online official info site · generated from game data · all images are in-game captures · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interface · Chronicle Online</title><meta name="description" content="Interface"><link rel="stylesheet" href="../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>OFFICIAL INFO SITE</small></span></a>
+<div class="lang"><a href="../ko/ui.html" class="">KO</a><a href="../en/ui.html" class="on">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="index.html" class="">Home</a><a href="news.html" class="">News</a><a href="guide/index.html" class="">Guides</a><a href="ui.html" class="on">Interface</a><a href="db/index.html" class="">Database</a><a href="systems.html" class="">Systems</a><a href="community.html" class="">Community</a></div></nav></header>
+<main><div class="sheet"><h1>Interface Guide</h1>
+<p>Based on the phone landscape layout. Numbers match the picture.</p>
+<h2>Battle screen (HUD)</h2><figure style="margin:10px 0"><img class="shot" src="../img/hud_marked.jpg" alt="HUD in town" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">HUD in town</figcaption></figure>
+<ul class="callouts"><li><b class="n">1</b>Status — level, class, HP, MP</li><li><b class="n">2</b>Buff row — tap an icon for name and time left</li><li><b class="n">3</b>Chat tabs &amp; log — All/Say/World/Party/Clan/Trade; tap to collapse</li><li><b class="n">4</b>Menu 3×2 — Map · Character · Bag / Skills · Quests · Healer</li><li><b class="n">5</b>Minimap — zone name and your position</li><li><b class="n">6</b>Quest panel — current step and [Go] (auto-walk)</li><li><b class="n">7</b>Auto row — [1/2] page, [HP] auto potion, [Field] auto hunt, [Skill] auto skills, [Shot] auto shots</li><li><b class="n">8</b>6 skill slots — quarter circle around Attack (page 1 = 1–6, page 2 = 7–12). Long-press to remove</li><li><b class="n">9</b>[Attack] — hit the target / auto attack</li><li><b class="n">10</b>2 item slots — HP potion, return scroll (changeable from the bag)</li><li><b class="n">11</b>Bottom toggle bar — toggles and buffs (PC Shift+1~=). [A] badge on a slot = auto</li><li><b class="n">12</b>XP bar · Gold · Bag slots</li></ul>
+<div class="note">The target window appears top-center when you tap a monster (name, level, HP). Aggressive monsters show a red ring, passive ones yellow.</div>
+<h2>Character select</h2><figure style="margin:10px 0"><img class="shot" src="../img/charselect_marked.jpg" alt="Character select" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">Character select</figcaption></figure>
+<ul class="callouts"><li><b class="n">1</b>Character list — level, race, class, last played (tap to select)</li><li><b class="n">2</b>[Start Game] — enter with the selected character</li><li><b class="n">3</b>[New Character] — race, branch, sex, look</li><li><b class="n">4</b>[Delete] — remove the selected character (asks again)</li><li><b class="n">5</b>Character count (max 50)</li><li><b class="n">6</b>◀ ▶ rotate preview (drag works too)</li><li><b class="n">7</b>3D preview of the selected character — gear and look as-is</li></ul>
+<h2>Buff picker</h2><figure style="margin:10px 0"><img class="shot" src="../img/hud_buff_marked.jpg" alt="Buff board 9×4" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">Buff board 9×4</figcaption></figure>
+<ul class="callouts"><li><b class="n">1</b>Active buffs</li><li><b class="n">2</b>Buff board — choose buffs the mercenary buffer casts (auto-buff in ⚙ Settings)</li><li><b class="n">3</b>[Close]</li></ul>
+<h2>Flow: forming a party</h2>
+<ol class="steps"><li>Tap another player → small menu under the name</li><li>[Invite to party] → accept/decline on their screen</li>
+<li>Menu › Social › Party tab: member HP, loot rule (round-robin / dice), leave</li><li>XP is shared among nearby members (large level gaps earn less)</li></ol>
+<h2>Flow: starting auto hunt</h2>
+<ol class="steps"><li>Go to a hunting ground (Map › zone › [Go])</li><li>Turn on [Field] in the auto row → hunts nearest monsters</li>
+<li>Turn on [Skill] for auto skills. Buffs/toggles with the [A] badge are kept up automatically</li><li>Turn on [HP] to drink potions under the set HP %</li>
+<li>Long-press [Field] → range (near/normal/wide/stay), target rules, skip high levels</li></ol>
+<h2>Flow: enchanting</h2>
+<ol class="steps"><li>Bag › tap an enchant scroll → [Use]</li><li>Pick gear of the same grade → chance shown → [Enchant]</li><li>Success: +1 and glow / Fail: breaks into Dragon Scales</li></ol>
+<div class="note warn">PC layout notes will be added after testing.</div></div></main>
+<footer>Chronicle Online official info site · generated from game data · all images are in-game captures · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

@@ -1,0 +1,30 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>홈 · 크로니클 온라인</title><meta name="description" content="홈"><link rel="stylesheet" href="../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>크로니클 온라인 · 공식 정보</small></span></a>
+<div class="lang"><a href="../ko/index.html" class="on">KO</a><a href="../en/index.html" class="">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="index.html" class="on">홈</a><a href="news.html" class="">새 소식</a><a href="guide/index.html" class="">게임 가이드</a><a href="ui.html" class="">인터페이스</a><a href="db/index.html" class="">데이터베이스</a><a href="systems.html" class="">고유 시스템</a><a href="community.html" class="">커뮤니티</a></div></nav></header>
+<main><div class="sheet">
+<div class="hero"><img src="../img/g_party.jpg" alt=""><div class="txt"><h1>크로니클 온라인</h1>
+<p>옛 MMORPG의 감성을 카툰으로 — 휴먼·엘프·다크엘프·오크·드워프, 자동 사냥, 강화 +20, 레이드와 파티. 로블록스에서 무료.</p>
+<p style="margin-top:10px"><a class="btn" href="https://www.roblox.com/games/101032654015100" target="_blank" rel="noopener">▶ 로블록스에서 플레이</a> <a class="btn stone" href="guide/first10.html">처음 10분 가이드</a></p></div></div>
+<div class="grid">
+<a class="tile" href="guide/index.html"><p class="ttl">📜 게임 가이드</p><p>처음 10분 · 조작 · 성장 · 강화 · 돈과 거래 · 용병과 소환수</p></a>
+<a class="tile" href="db/mobs.html"><p class="ttl">👾 몬스터 도감</p><p>169종 — 레벨·체력·출현 지역·드랍</p></a>
+<a class="tile" href="db/items.html"><p class="ttl">🗡 아이템 사전</p><p>1189개 — 등급 색, 어디서 떨어지고 어디서 파나</p></a>
+<a class="tile" href="db/zones.html"><p class="ttl">🗺 사냥터·지역</p><p>36곳 — 레벨대와 몬스터</p></a>
+<a class="tile" href="db/skills.html"><p class="ttl">✨ 직업·스킬</p><p>5종족 × 전사/마법 계열, 1차·2차 직업, 스킬</p></a>
+<a class="tile" href="systems.html"><p class="ttl">⚒ 고유 시스템</p><p>강화 확률표 · 자동 사냥 [A] · 용병 펫 · 소환수 · 레이드 주사위 · 쿠폰</p></a>
+</div>
+<h2>새 소식</h2><ul><li><b>패치 128</b> <small>(11-06)</small> — 애널리스트 전부<ul><li>경제(골드 출처·용도)·진행(메인 퀘스트·레벨·의뢰·레이드)·사망·강화·구매 이벤트 추가 — docs/funnel.md 표</li></ul></li><li><b>패치 127</b> <small>(11-06)</small> — 유입 추적<ul><li>보는 곳: docs/funnel.md — Creator Hub 분석 › 퍼널·사용자 정의 이벤트, Studio 명령 바 tools/patch/funnel_report.lua</li></ul></li><li><b>패치 126</b> <small>(11-06)</small> — 렉 1차</li><li><b>패치 125</b> <small>(11-05)</small> — 전체 연령 오픈 기념 쿠폰 ALLAGES</li><li><b>패치 124</b> <small>(11-05)</small> — 캐릭터 음성 2종 (물리 스킬 기합 · 피격)</li></ul><p><a href="news.html">전체 보기 →</a></p>
+<h2>등급 색 — 강화 빛과 같은 색</h2>
+<p><span class="badge b-none">일반 · Lv 1+</span> <span class="badge b-D">D급 · Lv 20+</span> <span class="badge b-C">C급 · Lv 40+</span> <span class="badge b-B">B급 · Lv 52+</span> <span class="badge b-A">A급 · Lv 61+</span> <span class="badge b-S">S급 · Lv 76+</span></p>
+<div class="rail"><img src="../img/g_party.jpg" alt="" loading="lazy"><img src="../img/ref_town.jpg" alt="" loading="lazy"><img src="../img/g_slash.jpg" alt="" loading="lazy"><img src="../img/ref_imp.jpg" alt="" loading="lazy"><img src="../img/town2.jpg" alt="" loading="lazy"><img src="../img/ref_orc.jpg" alt="" loading="lazy"></div></div></main>
+<footer>크로니클 온라인 공식 정보 사이트 · 게임 데이터에서 자동 생성 · 모든 그림은 게임 화면 캡처 · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

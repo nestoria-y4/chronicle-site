@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enchant · Chronicle Online</title><meta name="description" content="Enchant"><link rel="stylesheet" href="../../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>OFFICIAL INFO SITE</small></span></a>
+<div class="lang"><a href="../../ko/guide/enchant.html" class="">KO</a><a href="../../en/guide/enchant.html" class="on">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="../index.html" class="">Home</a><a href="../news.html" class="">News</a><a href="../guide/index.html" class="on">Guides</a><a href="../ui.html" class="">Interface</a><a href="../db/index.html" class="">Database</a><a href="../systems.html" class="">Systems</a><a href="../community.html" class="">Community</a></div></nav></header>
+<main><div class="sheet"><h1>Enchant</h1>
+<p>Use a weapon/armor enchant scroll of the matching grade to add +1. On failure the item breaks into Dragon Scales (crystals). Max +20.</p>
+<div class="two"><div><div class="tbl-wrap"><table><tr><th>Step</th><th class="num">Weapon · Armor</th><th class="num">Full-body armor</th></tr><tr><td>+0 → +1</td><td class="num">100%</td><td class="num">100%</td></tr><tr><td>+1 → +2</td><td class="num">100%</td><td class="num">100%</td></tr><tr><td>+2 → +3</td><td class="num">100%</td><td class="num">100%</td></tr><tr><td>+3 → +4</td><td class="num">67%</td><td class="num">100%</td></tr><tr><td>+4 → +5</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+5 → +6</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+6 → +7</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+7 → +8</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+8 → +9</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+9 → +10</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+10 → +11</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+11 → +12</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+12 → +13</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+13 → +14</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+14 → +15</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+15 → +16</td><td class="num">67%</td><td class="num">67%</td></tr><tr><td>+16 → +17</td><td class="num">33%</td><td class="num">33%</td></tr><tr><td>+17 → +18</td><td class="num">33%</td><td class="num">33%</td></tr><tr><td>+18 → +19</td><td class="num">33%</td><td class="num">33%</td></tr><tr><td>+19 → +20</td><td class="num">33%</td><td class="num">33%</td></tr></table></div></div>
+<div><div class="note"><b>Safe enchant</b>: +3 (full-body armor +4) — never fails<br>+4~+15: 66.67% · +16~+20: 33%<br>
+<b>Enchant glow</b>: +4 white → +7 blue → +10 purple → +13 red → +16 gold (same as the grade colors on this site)<br>
+<b>Per-step bonus</b>: weapon P.Atk +1–3 / +4↑ — B: 3/6 · C: 3/6 · D: 2/4 · none: 1/2 (bow ×2) · armor 1/3</div>
+<figure style="margin:10px 0"><img class="shot" src="../../img/ref_back.jpg" alt="Enchant glow on a weapon" loading="lazy"><figcaption style="text-align:center;color:var(--ink3);font-size:.85rem">Enchant glow on a weapon</figcaption></figure></div></div></div></main>
+<footer>Chronicle Online official info site · generated from game data · all images are in-game captures · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

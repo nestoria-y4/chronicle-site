@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Growth · Chronicle Online</title><meta name="description" content="Growth"><link rel="stylesheet" href="../../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>OFFICIAL INFO SITE</small></span></a>
+<div class="lang"><a href="../../ko/guide/growth.html" class="">KO</a><a href="../../en/guide/growth.html" class="on">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="../index.html" class="">Home</a><a href="../news.html" class="">News</a><a href="../guide/index.html" class="on">Guides</a><a href="../ui.html" class="">Interface</a><a href="../db/index.html" class="">Database</a><a href="../systems.html" class="">Systems</a><a href="../community.html" class="">Community</a></div></nav></header>
+<main><div class="sheet"><h1>Growth</h1>
+<p>Experience and level tables use classic values (rate ×7). The level cap rises with each Chronicle (now 76).</p>
+<ul><li>Lv 1–15 race start area (village + 3 zones) → Lv 15 join the central town</li>
+<li>Lv 18 class quest → Lv 20 1st class (2–3 per race/branch) → Lv 40 2nd class</li>
+<li>Learn skills with SP. Grade gear has level limits: D 20 · C 40 · B 52 · A 61 · S 76 (penalty if under-leveled)</li>
+<li>On death you revive in the area town with 65% HP. No XP loss.</li></ul>
+<h2>Total XP by level</h2>
+<div class="tbl-wrap"><table><tr><th>Lv</th><th class="num">Total XP</th><th>Lv</th><th class="num">Total XP</th></tr><tr><td>1</td><td class="num">0</td><td>21</td><td class="num">1,023,785</td></tr><tr><td>2</td><td class="num">68</td><td>22</td><td class="num">1,439,215</td></tr><tr><td>3</td><td class="num">364</td><td>23</td><td class="num">1,948,497</td></tr><tr><td>4</td><td class="num">1,169</td><td>24</td><td class="num">2,568,850</td></tr><tr><td>5</td><td class="num">2,885</td><td>25</td><td class="num">3,320,625</td></tr><tr><td>6</td><td class="num">6,039</td><td>26</td><td class="num">4,227,172</td></tr><tr><td>7</td><td class="num">11,288</td><td>27</td><td class="num">5,315,161</td></tr><tr><td>8</td><td class="num">19,424</td><td>28</td><td class="num">6,614,929</td></tr><tr><td>9</td><td class="num">31,379</td><td>29</td><td class="num">8,161,929</td></tr><tr><td>10</td><td class="num">48,230</td><td>30</td><td class="num">9,995,812</td></tr><tr><td>11</td><td class="num">71,203</td><td>31</td><td class="num">12,162,655</td></tr><tr><td>12</td><td class="num">101,678</td><td>32</td><td class="num">14,713,777</td></tr><tr><td>13</td><td class="num">141,194</td><td>33</td><td class="num">17,708,475</td></tr><tr><td>14</td><td class="num">191,455</td><td>34</td><td class="num">21,213,445</td></tr><tr><td>15</td><td class="num">254,331</td><td>35</td><td class="num">25,304,463</td></tr><tr><td>16</td><td class="num">331,868</td><td>36</td><td class="num">30,067,485</td></tr><tr><td>17</td><td class="num">426,289</td><td>37</td><td class="num">35,599,858</td></tr><tr><td>18</td><td class="num">540,001</td><td>38</td><td class="num">42,010,312</td></tr><tr><td>19</td><td class="num">675,597</td><td>39</td><td class="num">49,421,366</td></tr><tr><td>20</td><td class="num">835,864</td><td>40</td><td class="num">57,972,427</td></tr></table></div>
+<p><a href="../db/skills.html">See classes & skills →</a></p></div></main>
+<footer>Chronicle Online official info site · generated from game data · all images are in-game captures · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>

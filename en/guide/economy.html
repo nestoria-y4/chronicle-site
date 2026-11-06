@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Money &amp; Trade · Chronicle Online</title><meta name="description" content="Money &amp; Trade"><link rel="stylesheet" href="../../theme.css"></head>
+<body><header class="top"><div class="in"><a class="brand" href="../index.html"><span class="flame"></span><span><b>CHRONICLE ONLINE</b><small>OFFICIAL INFO SITE</small></span></a>
+<div class="lang"><a href="../../ko/guide/economy.html" class="">KO</a><a href="../../en/guide/economy.html" class="on">EN</a></div></div>
+<nav class="menu"><div class="in"><a href="../index.html" class="">Home</a><a href="../news.html" class="">News</a><a href="../guide/index.html" class="on">Guides</a><a href="../ui.html" class="">Interface</a><a href="../db/index.html" class="">Database</a><a href="../systems.html" class="">Systems</a><a href="../community.html" class="">Community</a></div></nav></header>
+<main><div class="sheet"><h1>Money &amp; Trade</h1>
+<p>The currency is Gold. It drops from monsters, comes from quest rewards, and from selling gear to merchants.</p>
+<h2>Merchants (each town)</h2>
+<ul><li><b>Weapon Merchant</b></li><li><b>Armor Merchant</b></li><li><b>Accessory Merchant</b></li><li><b>Grocer</b></li></ul>
+<p><a href="../db/npcs.html">Shop lists by town →</a></p>
+<h2>Between players</h2>
+<ul><li><b>Stalls</b> — Rent a spot in the central town (fee) and list your items with prices. Gold arrives when someone buys.</li>
+<li><b>Consignment</b> — Leave items with the consignment broker; they sell while you are away (5% fee).</li>
+<li><b>Warehouse</b> — Store items and gold in the town warehouse, shared between your characters.</li>
+<li><b>Drop & pick up</b> — Dropped items lie on the ground for anyone to pick up. Party drops are shared by party rules.</li></ul>
+<h2>Crafting & dismantling (Dwarf bonus)</h2>
+<ul><li>Dismantle D-grade+ gear at the smith for Dragon Scales (crafting material). Dwarves +10%.</li>
+<li>Learn a recipe, gather materials and craft gear or shots. Success rate per recipe (Dwarves +10%).</li>
+<li><a href="../db/items.html?k=recipe">See all 177 recipes →</a></li></ul></div></main>
+<footer>Chronicle Online official info site · generated from game data · all images are in-game captures · Y4 Universe</footer>
+<script>
+document.querySelectorAll('[data-filter]').forEach(function(inp){var tbl=document.getElementById(inp.dataset.filter);if(!tbl)return;
+ var sel=document.querySelector('[data-filter-sel="'+inp.dataset.filter+'"]');
+ function run(){var q=inp.value.toLowerCase().trim();var k=sel?sel.value:'';var n=0;
+  tbl.querySelectorAll('[data-row]').forEach(function(r){var ok=(!q||r.dataset.row.toLowerCase().indexOf(q)>=0)&&(!k||r.dataset.kind==k);r.style.display=ok?'':'none';if(ok)n++;});
+  var c=document.getElementById(inp.dataset.filter+'-count');if(c)c.textContent=n;}
+ inp.addEventListener('input',run);if(sel)sel.addEventListener('change',run);run();});
+</script></body></html>
