@@ -77,7 +77,7 @@ tr:nth-child(even) td{background:rgba(217,196,149,.18)}
 /* 도감 카드 */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .mcard{background:linear-gradient(180deg,#2e2621,#1f1915);border:2px solid #6b5a3a;border-radius:10px;padding:10px;color:#f4e9c8;box-shadow:var(--shadow);display:block}
-.mcard .pic{height:92px;border-radius:6px;border:1px solid #000;display:grid;place-items:center;font-size:2.2rem;background:radial-gradient(circle at 50% 40%,#5a4a38,#241d18 75%)}
+.mcard .pic{height:92px;aspect-ratio:auto;border-radius:6px;border:1px solid #000;display:grid;place-items:center;font-size:2.2rem;background:radial-gradient(circle at 50% 40%,#5a4a38,#241d18 75%)}
 .mcard .pic.raid{background:radial-gradient(circle at 50% 40%,#7a1e1e,#241d18 75%)}.mcard .pic.named{background:radial-gradient(circle at 50% 40%,#4a2a7a,#241d18 75%)}
 .mcard .name{font-weight:700;color:var(--gold2);margin-top:6px;display:block}
 .mcard small{color:#cdb98e;font-size:.78rem}
@@ -106,3 +106,7 @@ footer{color:#9c8b66;text-align:center;font-size:.8rem;padding:30px 10px}
 .coupon{font-family:"Cinzel",monospace;font-size:1.3rem;letter-spacing:.2em;background:#1f1915;color:var(--gold2);padding:6px 14px;border-radius:6px;border:1px dashed var(--gold);display:inline-block}
 
 td.thumb{width:48px;padding:3px}td.thumb img{width:48px;height:48px;border-radius:8px;border:1px solid var(--line);display:block;object-fit:cover}
+
+.mcard .pic img{object-fit:contain!important;background:#1a1410}
+.mcard .pic:has(img){height:auto;aspect-ratio:1/1;max-height:260px;margin:0 auto;width:100%}
+@media (max-width:600px){.cards{grid-template-columns:repeat(2,1fr)}.mcard .pic:has(img){max-height:none}}
